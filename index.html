@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <style>
+            .container {
+                display: flex;
+                padding: 0%;
+                margin: 0%;
+                justify-content: space-between;
+                padding: 10px 30px;
+                background-color: darkblue;
+                border-radius: 10px;
+                color: white;   
+                font-family: Arial, sans-serif;
+                text-wrap: wrap;
+            }
+            nav ul {
+                display: flex;
+                gap: 30px;
+            }
+            nav ul li {
+                list-style-type: none;
+                
+            }
+            nav ul li a{
+                text-decoration: none; 
+                color: white;
+            }
+            nav ul li a:hover {
+                color:lightblue;
+            }
+            nav {
+                align-content: center;  
+            }
+            @media (max-width: 480px) {
+                .container {
+                    padding: 10px;
+                }
+                h1 {
+                font-size: 1.5rem;
+                }
+                nav ul {
+                    gap: 20px;
+                }
+                
+                
+            }
+            .cardview {
+                display: flex;
+                gap: 20px;
+                padding: 20px;
+                justify-content: end;
+                margin-top: 100px;
+            }
+            .card {
+                flex: 1;
+                max-width: 300px;
+                height: 300px;
+                align-content: center;
+                background-color: darkblue;
+                border-radius: 15px;
+                padding: 20px;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                color: white;
+                box-shadow: 0 4px 6px rgb(0,0,0,0.6);
+                transition: all 0.3s ease-in-out;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+            }
+            .cardview img {
+                max-width: 200px;
+                max-width: 250px;
+                height: 200px;
+                border-radius: 15px;
+            }
+            .child-card {
+                max-width: 500px;
+                width: 100%;
+                background-color: white;
+                height: 200px;
+                border-radius: 15px;
+                
+                
+            }
+        </style>
+        <body>
+            <div class = "container">
+                <h1>Aljune</h1>
+            <nav>
+                <ul>
+                    <li><a href = "pra">Home</a></li>
+                    <li><a href = "pra">About</a></li>
+                    <li><a href = "pra">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class = "cardview">
+            <div class = "card">
+                <div class = "child-card">
+                </div>   
+                <h2>Card</h2>
+                <p>hey</p>
+         
+                </div>
+        </body>
+    </head>
+</html>
